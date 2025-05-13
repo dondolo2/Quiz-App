@@ -3827,9 +3827,4 @@ const allQuestions = {
       difficulty: "hard",
     },
   ],
-
-  // Random
-  random: [
-    // Combine questions from all above for random
-  ],
 };

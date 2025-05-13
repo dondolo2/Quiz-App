@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Get questions for the selected category
     const categoryQuestions = allQuestions[category];
     shuffledQuestions = [...categoryQuestions].sort(() => Math.random() - 0.5);
-    //.slice(0, totalQuestions);
 
     const totalQuestions = shuffledQuestions.length;
     currentQuestionIndex = 0;
@@ -81,6 +80,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
       button.addEventListener("click", selectAnswer);
       answerButtonsContainer.appendChild(button);
+    });
+    // RANDOM BUTTON
+    function getRandomQuestions() {
+      // Flatten all category arrays into one big array
+      const all = Object.values(allQuestions).flat();
+
+      // Shuffle and take the first 20
+      return shuffleArray(all).slice(0, 20);
+    }
+
+    function shuffleArray(arr) {
+      return arr.sort(() => Math.random() - 0.5);
+    }
+
+    categoryButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const selectedCategory = button.dataset.category;
+        questions =
+          selectedCategory === "random"
+            ? getRandomQuestions()
+            : allQuestions[selectedCategory];
+
+        categorySelection.style.display = "none";
+        quizContainer.style.display = "block";
+        startQuiz();
+      });
     });
   }
 
@@ -157,6 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // BACKGROUND IMAGE FOR #APP
   const app = document.getElementById("app");
 
   document.querySelectorAll(".category-btn").forEach((button) => {
