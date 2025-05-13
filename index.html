@@ -10,42 +10,48 @@
     <div class="app">
         <h1>Simple Quiz</h1>
 
-    <div class="category-selection">
-        <h2>Select a Category</h2>
-        <div id="category-buttons">
-            <button class="btn category-btn" data-category="animals">Animals</button>
-            <button class="btn category-btn" data-category="plantBiology">Plant Biology</button>
-            <button class="btn category-btn" data-category="humanBiology">Human Biology</button>
-            <button class="btn category-btn" data-category="geography">Geography</button>
-            <button class="btn category-btn" data-category="informationTechnology">Information Technology</button>
-            <button class="btn category-btn" data-category="businessAndEconomics">Business & Economics</button>
-            <button class="btn category-btn" data-category="chemistry">Chemistry</button>
-            <button class="btn category-btn" data-category="physics">Physics</button>
-            <button class="btn category-btn" data-category="engineeringAndBuiltEnv">Engineering & Built Environment</button>
-            <button class="btn category-btn" data-category="theology">Theology</button>
-            <button class="btn category-btn" data-category="philosophy">Philosophy</button>
-            <button class="btn category-btn" data-category="psychology">Psychology</button>
-            <button class="btn category-btn" data-category="medicine">Medicine</button>
-            <button class="btn category-btn" data-category="artsAndCulture">Arts & Culture</button>
-            <button class="btn category-btn" data-category="literature">Literature</button>
-            <button class="btn category-btn" data-category="history">History</button>
-            <button class="btn category-btn" data-category="entertainmentPopCultureQuestions">Pop Culture</button>
-            <button class="btn category-btn" data-category="random">Random</button>
+            <div class="category-selection">
+                <h2>Select a Category</h2>
+                <div id="category-buttons">
+                    <button class="btn category-btn" data-category="animals">Animals</button>
+                    <button class="btn category-btn" data-category="plantBiology">Plant Biology</button>
+                    <button class="btn category-btn" data-category="humanBiology">Human Biology</button>
+                    <button class="btn category-btn" data-category="geography">Geography</button>
+                    <button class="btn category-btn" data-category="informationTechnology">Information Technology</button>
+                    <button class="btn category-btn" data-category="businessAndEconomics">Business & Economics</button>
+                    <button class="btn category-btn" data-category="chemistry">Chemistry</button>
+                    <button class="btn category-btn" data-category="physics">Physics</button>
+                    <button class="btn category-btn" data-category="engineeringAndBuiltEnv">Engineering & Built Environment</button>
+                    <button class="btn category-btn" data-category="theology">Theology</button>
+                    <button class="btn category-btn" data-category="philosophy">Philosophy</button>
+                    <button class="btn category-btn" data-category="psychology">Psychology</button>
+                    <button class="btn category-btn" data-category="medicine">Medicine</button>
+                    <button class="btn category-btn" data-category="artsAndCulture">Arts & Culture</button>
+                    <button class="btn category-btn" data-category="literature">Literature</button>
+                    <button class="btn category-btn" data-category="history">History</button>
+                    <button class="btn category-btn" data-category="entertainmentPopCultureQuestions">Pop Culture</button>
+                    <button class="btn category-btn" data-category="random">Random</button>
+                </div>
+            </div>
+            
         </div>
-    </div>
-    
-</div>
     
 
-        <div class="quiz">
+        <div class="quiz hidden">
+            <div class="quiz-header">
+                <span id="progress">Question 1 of 10</span>
+                <button id="back-btn">Back to Categories</button>  
+            </div>
+
             <h2 id="question">Question goes here</h2>
+
             <div  id="answer-buttons">
                 <button class="btn">Answer 1</button>
                 <button class="btn">Answer 2</button>
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>
             </div>
-            <button id="next-btn">Next</button>
+            <button id="next-btn" class="hidden">Next</button>
         </div>
     </div>
     
