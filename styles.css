@@ -14,7 +14,8 @@ body {
     padding: 20px;
 }
 
-.app {
+#app {
+    /* display: block; */
     background: #323232;
     width: 90%;
     max-width: 600px;
@@ -25,11 +26,11 @@ body {
     transition: transform 0.3s ease;
 }
 
-.app:hover {
+#app:hover {
     transform: translateY(-5px);
 }
 
-.app h1 {
+#app h1 {
     font-size: 28px;
     color: #fff;
     font-weight: 600;
@@ -83,6 +84,12 @@ body {
     transform: none !important;
 }
 
+#button-controls {
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+}
+
 #next-btn {
     background: #001e4d;
     color: #fff;
@@ -93,7 +100,6 @@ body {
     margin: 25px auto 0;
     border-radius: 6px;
     cursor: pointer;
-    display: none;
     transition: all 0.3s;
     font-size: 16px;
     text-align: center;
@@ -101,6 +107,27 @@ body {
 }
 
 #next-btn:hover {
+    background: #003580;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#previous-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 160px;
+    border: none;
+    padding: 14px;
+    margin: 25px auto 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#previous-btn:hover {
     background: #003580;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -209,7 +236,7 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 500px) {
-    .app {
+    #app {
         padding: 25px 20px;
         margin: 40px auto;
     }
@@ -218,7 +245,7 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .app h1 {
+    #app h1 {
         font-size: 24px;
     }
 

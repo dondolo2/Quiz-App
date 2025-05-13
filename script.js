@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const questionElement = document.getElementById("question");
   const answerButtonsContainer = document.getElementById("answer-buttons");
   const nextButton = document.getElementById("next-btn");
+  const previousButton = document.getElementById("previous-btn");
   const backButton = document.getElementById("back-btn");
   const progressElement = document.getElementById("progress");
 
@@ -27,9 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Quiz state variables
   let currentCategory = "";
   let shuffledQuestions = [];
-  let currentQuestionIndex = 0;
+  let currentQuestionIndex;
   let score = 0;
-  const totalQuestions = 10;
+  const totalQuestions = 20;
 
   // Initialize the app
   function init() {
@@ -57,6 +58,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Display the current question and answers
   function showQuestion() {
+    const app = document.getElementById("app");
+    app.appendChild(quizContainer);
+
     resetState();
     const currentQuestion = shuffledQuestions[currentQuestionIndex];
     const questionNumber = currentQuestionIndex + 1;
@@ -84,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Reset the quiz state for the next question
   function resetState() {
     nextButton.classList.add("hidden");
+    previousButton.classList.add("hidden");
     // Clear previous answer buttons
     while (answerButtonsContainer.firstChild) {
       answerButtonsContainer.removeChild(answerButtonsContainer.firstChild);
@@ -114,6 +119,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     nextButton.classList.remove("hidden");
+    if (currentQuestionIndex > 0) {
+      previousButton.classList.remove("hidden");
+    }
   }
 
   // Show the final score
