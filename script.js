@@ -157,6 +157,38 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  const app = document.getElementById("app");
+
+  document.querySelectorAll(".category-btn").forEach((button) => {
+    button.addEventListener("mouseenter", () => {
+      const category = button.dataset.category;
+      app.style.backgroundImage = `url('img/${category}.jpg')`;
+      app.style.backgroundSize = "contain";
+      app.style.backgroundPosition = "center";
+    });
+
+    button.addEventListener("mouseleave", () => {
+      app.style.backgroundImage = "none"; // Or set to default if needed
+    });
+  });
+
+  const appBg = app; // shorthand
+
+  document.querySelectorAll(".category-btn").forEach((button) => {
+    button.addEventListener("mouseenter", () => {
+      const category = button.dataset.category;
+      const imageName = categoryImages[category];
+      if (imageName) {
+        appBg.style.setProperty("--hover-bg", `url('img/${imageName}')`);
+        appBg.classList.add("hovering");
+      }
+    });
+
+    button.addEventListener("mouseleave", () => {
+      appBg.classList.remove("hovering");
+    });
+  });
+
   backButton.addEventListener("click", init);
 
   // Initialize the app when the page loads

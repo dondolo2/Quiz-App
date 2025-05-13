@@ -3609,7 +3609,7 @@ const allQuestions = {
   ],
 
   //Entertainment and Pop Culture
-  entertainmentPopCultureQuestions: [
+  entertainmentPopCulture: [
     // Easy (5)
     {
       question: "Who played the character of Harry Potter in the movie series?",
