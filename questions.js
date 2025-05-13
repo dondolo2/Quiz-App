@@ -3485,6 +3485,127 @@ const allQuestions = {
       ],
       difficulty: "hard",
     },
+    {
+      question:
+        "What was the codename for the Allied invasion of Nazi-occupied France during World War II?",
+      answers: [
+        { text: "Operation Torch", correct: false },
+        { text: "Operation Barbarossa", correct: false },
+        { text: "Operation Overlord", correct: true },
+        { text: "Operation Neptune", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "What was the codename for the Allied invasion of Nazi-occupied France during World War II?",
+      answers: [
+        { text: "Operation Torch", correct: false },
+        { text: "Operation Barbarossa", correct: false },
+        { text: "Operation Overlord", correct: true },
+        { text: "Operation Neptune", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which African country was never formally colonized by a European power?",
+      answers: [
+        { text: "Liberia", correct: false },
+        { text: "Ethiopia", correct: true },
+        { text: "Kenya", correct: false },
+        { text: "Morocco", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "What was the main ideology of the Khmer Rouge under Pol Pot in Cambodia?",
+      answers: [
+        { text: "Religious theocracy", correct: false },
+        { text: "Communism", correct: true },
+        { text: "Monarchism", correct: false },
+        { text: "Fascism", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "In which year did India gain independence from British colonial rule?",
+      answers: [
+        { text: "1945", correct: false },
+        { text: "1947", correct: true },
+        { text: "1950", correct: false },
+        { text: "1939", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Who led the Haitian Revolution that resulted in the first Black republic?",
+      answers: [
+        { text: "Toussaint Louverture", correct: true },
+        { text: "Marcus Garvey", correct: false },
+        { text: "Jean-Jacques Dessalines", correct: false },
+        { text: "Boukman Dutty", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which international trial prosecuted high-ranking Nazi officials after World War II?",
+      answers: [
+        { text: "Hague Trials", correct: false },
+        { text: "Geneva Hearings", correct: false },
+        { text: "Nuremberg Trials", correct: true },
+        { text: "Versailles Council", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which Chinese dynasty built most of the Great Wall as it stands today?",
+      answers: [
+        { text: "Tang Dynasty", correct: false },
+        { text: "Yuan Dynasty", correct: false },
+        { text: "Ming Dynasty", correct: true },
+        { text: "Han Dynasty", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "The Balfour Declaration of 1917 supported the establishment of a national home for which people?",
+      answers: [
+        { text: "Kurds", correct: false },
+        { text: "Jews", correct: true },
+        { text: "Palestinians", correct: false },
+        { text: "Armenians", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "What empire was ruled by Mansa Musa, one of the richest individuals in history?",
+      answers: [
+        { text: "Ghana Empire", correct: false },
+        { text: "Mali Empire", correct: true },
+        { text: "Songhai Empire", correct: false },
+        { text: "Benin Kingdom", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which treaty marked the end of the Thirty Years' War in Europe in 1648?",
+      answers: [
+        { text: "Treaty of Versailles", correct: false },
+        { text: "Treaty of Tordesillas", correct: false },
+        { text: "Peace of Westphalia", correct: true },
+        { text: "Treaty of Utrecht", correct: false },
+      ],
+      difficulty: "hard",
+    },
   ],
 
   //Entertainment and Pop Culture

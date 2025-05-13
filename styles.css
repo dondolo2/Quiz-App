@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #DDD0C8;
+    background: #babd8d;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@ body {
     margin: 60px auto;
     border-radius: 12px;
     padding: 30px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(250, 149, 0, 0.35);
     transition: transform 0.3s ease;
 }
 
@@ -200,7 +200,7 @@ body {
 }
 
 #back-btn {
-    background: #555;
+    background: #475f6b;
     color: #fff;
     border: none;
     padding: 10px 18px;
@@ -212,9 +212,14 @@ body {
 }
 
 #back-btn:hover {
-    background: #777;
+    /* background: #777;
     transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); */
+    background: #B2B5E0;
+        color: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-color: #B2B5E0;
 }
 
 .hidden {

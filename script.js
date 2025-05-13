@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let shuffledQuestions = [];
   let currentQuestionIndex;
   let score = 0;
-  const totalQuestions = 20;
 
   // Initialize the app
   function init() {
@@ -44,10 +43,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Get questions for the selected category
     const categoryQuestions = allQuestions[category];
-    shuffledQuestions = [...categoryQuestions]
-      .sort(() => Math.random() - 0.5)
-      .slice(0, totalQuestions);
+    shuffledQuestions = [...categoryQuestions].sort(() => Math.random() - 0.5);
+    //.slice(0, totalQuestions);
 
+    const totalQuestions = shuffledQuestions.length;
     currentQuestionIndex = 0;
     score = 0;
 
@@ -67,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 1. Replace the question text
     questionElement.textContent = currentQuestion.question;
-    progressElement.textContent = `Question ${questionNumber} of ${totalQuestions}`;
+    progressElement.textContent = `Question ${questionNumber} of ${shuffledQuestions.length}`;
 
     // 2. Create and replace answer buttons
     currentQuestion.answers.forEach((answer) => {
@@ -127,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Show the final score
   function showScore() {
     resetState();
-    questionElement.textContent = `You scored ${score} out of ${totalQuestions}!`;
+    questionElement.textContent = `You scored ${score} out of ${shuffledQuestions.length}!`;
     nextButton.textContent = "Play Again";
     nextButton.classList.remove("hidden");
   }
