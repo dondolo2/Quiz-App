@@ -1,178 +1,133 @@
-const allQuestions = {
-  animals: [
-    {
-      question: "Which is the largest animal in the world?",
-      answers: [
-        { text: "Shark", correct: false },
-        { text: "Blue Whale", correct: true },
-        { text: "Elephant", correct: false },
-        { text: "Giraffe", correct: false },
-      ],
-    },
-    // Add more animal questions
-  ],
-  body: [
-    {
-      question: "Which human organ has the smallest bone?",
-      answers: [
-        { text: "Foot", correct: false },
-        { text: "Hand", correct: false },
-        { text: "Tongue", correct: false },
-        { text: "Ear", correct: true },
-      ],
-    },
-    // More body questions
-  ],
-  continents: [
-    {
-      question: "Which is the smallest continent?",
-      answers: [
-        { text: "Australia", correct: true },
-        { text: "Africa", correct: false },
-        { text: "Europe", correct: false },
-        { text: "Antarctica", correct: false },
-      ],
-    },
-    // More
-  ],
-  tech: [
-    {
-      question: "What does 'CPU' stand for?",
-      answers: [
-        { text: "Central Process Unit", correct: false },
-        { text: "Central Processing Unit", correct: true },
-        { text: "Computer Personal Unit", correct: false },
-        { text: "Central Processor Union", correct: false },
-      ],
-    },
-    // More
-  ],
-  general: [
-    {
-      question: "Which is my real name?",
-      answers: [
-        { text: "Mooskie", correct: false },
-        { text: "Musa", correct: false },
-        { text: "Mosa", correct: true },
-        { text: "Moosa", correct: false },
-      ],
-    },
-    // More
-  ],
-  random: [
-    // Combine questions from all above for random
-  ],
-};
-
-let questions = [];
-// let currentQuestionIndex = 0;
-// let score = 0;
-
-const categorySelect = document.querySelector(".category-select");
+// DOM Elements
 const categoryButtons = document.querySelectorAll(".category-btn");
 const quizContainer = document.querySelector(".quiz");
-
-categoryButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const selectedCategory = button.dataset.category;
-    questions =
-      selectedCategory === "random"
-        ? getRandomQuestions()
-        : allQuestions[selectedCategory];
-    categorySelect.style.display = "none";
-    quizContainer.style.display = "block";
-    startQuiz();
-  });
-});
-
-function getRandomQuestions() {
-  const all = Object.values(allQuestions).flat();
-  return shuffleArray(all).slice(0, 5); // Example: pick 5 random questions
-}
-
-function shuffleArray(arr) {
-  return arr.sort(() => Math.random() - 0.5);
-}
-
+const categorySelection = document.querySelector(".category-selection");
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const backButton = document.getElementById("back-btn");
+const progressElement = document.getElementById("progress");
 
+// Quiz state variables
+let currentCategory = "";
+let shuffledQuestions = [];
 let currentQuestionIndex = 0;
 let score = 0;
+let totalQuestions = 10; // Number of questions per quiz
 
-function startQuiz() {
+// Initialize the app
+function init() {
+  quizContainer.classList.add("hidden");
+  categorySelection.classList.remove("hidden");
+}
+
+// Start the quiz for a selected category
+function startQuiz(category) {
+  currentCategory = category;
+  shuffledQuestions = [...allQuestions[category]]
+    .sort(() => Math.random() - 0.5)
+    .slice(0, totalQuestions);
   currentQuestionIndex = 0;
   score = 0;
-  nextButton.innerHTML = "Next";
+
+  categorySelection.classList.add("hidden");
+  quizContainer.classList.remove("hidden");
   showQuestion();
 }
 
+// Display the current question
 function showQuestion() {
   resetState();
-  let currentQuestion = questions[currentQuestionIndex];
-  let questionNo = currentQuestionIndex + 1;
-  questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+  const question = shuffledQuestions[currentQuestionIndex];
+  const questionNumber = currentQuestionIndex + 1;
 
-  currentQuestion.answers.forEach((answer) => {
+  questionElement.innerHTML = question.question;
+  progressElement.textContent = `Question ${questionNumber} of ${totalQuestions}`;
+
+  question.answers.forEach((answer) => {
     const button = document.createElement("button");
     button.innerHTML = answer.text;
-    button.classList.add("btn");
-    answerButtons.appendChild(button);
+    button.classList.add("btn", "answer-btn");
     if (answer.correct) {
       button.dataset.correct = answer.correct;
     }
     button.addEventListener("click", selectAnswer);
+    answerButtons.appendChild(button);
   });
 }
 
+// Reset the quiz state for the next question
 function resetState() {
-  nextButton.style.display = "none";
+  nextButton.classList.add("hidden");
   while (answerButtons.firstChild) {
     answerButtons.removeChild(answerButtons.firstChild);
   }
 }
 
+// Handle answer selection
 function selectAnswer(e) {
-  const selectedBtn = e.target;
-  const isCorrect = selectedBtn.dataset.correct === "true";
-  if (isCorrect) {
-    selectedBtn.classList.add("correct");
+  const selectedButton = e.target;
+  const correct = selectedButton.dataset.correct === "true";
+
+  if (correct) {
+    selectedButton.classList.add("correct");
     score++;
   } else {
-    selectedBtn.classList.add("incorrect");
+    selectedButton.classList.add("incorrect");
+    // Highlight the correct answer
+    Array.from(answerButtons.children).forEach((button) => {
+      if (button.dataset.correct === "true") {
+        button.classList.add("correct");
+      }
+    });
   }
+
+  // Disable all buttons after selection
   Array.from(answerButtons.children).forEach((button) => {
-    if (button.dataset.correct === "true") {
-      button.classList.add("correct");
-    }
     button.disabled = true;
   });
-  nextButton.style.display = "block";
+
+  nextButton.classList.remove("hidden");
 }
 
+// Show the final score
 function showScore() {
   resetState();
-  questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+  questionElement.innerHTML = `You scored ${score} out of ${totalQuestions}!`;
   nextButton.innerHTML = "Play Again";
-  nextButton.style.display = "block";
+  nextButton.classList.remove("hidden");
 }
 
+// Handle the next button click
 function handleNextButton() {
   currentQuestionIndex++;
-  if (currentQuestionIndex < questions.length) {
+  if (currentQuestionIndex < shuffledQuestions.length) {
     showQuestion();
   } else {
     showScore();
   }
 }
 
+// Event Listeners
+categoryButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    startQuiz(button.dataset.category);
+  });
+});
+
 nextButton.addEventListener("click", () => {
-  if (currentQuestionIndex < questions.length) {
+  if (currentQuestionIndex < shuffledQuestions.length) {
     handleNextButton();
   } else {
-    startQuiz();
+    // Reset the quiz if "Play Again" is clicked
+    startQuiz(currentCategory);
   }
 });
 
-startQuiz();
+backButton.addEventListener("click", () => {
+  quizContainer.classList.add("hidden");
+  categorySelection.classList.remove("hidden");
+});
+
+// Initialize the app when the page loads
+document.addEventListener("DOMContentLoaded", init);
