@@ -10,6 +10,7 @@ const allQuestions = {
         { text: "Lion", correct: true },
         { text: "Leopard", correct: false },
       ],
+      difficulty: "easy",
     },
     {
       question: "Which animal is the largest mammal in the world?",
@@ -19,6 +20,7 @@ const allQuestions = {
         { text: "Shark", correct: false },
         { text: "Giraffe", correct: false },
       ],
+      difficulty: "easy",
     },
     {
       question: "What do pandas primarily eat?",
@@ -28,6 +30,7 @@ const allQuestions = {
         { text: "Fruits", correct: false },
         { text: "Leaves", correct: false },
       ],
+      difficulty: "easy",
     },
     {
       question: "Which bird is often associated with delivering babies?",
@@ -37,6 +40,7 @@ const allQuestions = {
         { text: "Flamingo", correct: false },
         { text: "Eagle", correct: false },
       ],
+      difficulty: "easy",
     },
     {
       question: "How many legs does a spider have?",
@@ -46,6 +50,7 @@ const allQuestions = {
         { text: "10", correct: false },
         { text: "12", correct: false },
       ],
+      difficulty: "easy",
     },
 
     // Medium (7)
@@ -57,6 +62,7 @@ const allQuestions = {
         { text: "Lion", correct: false },
         { text: "Dog", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question: "Which flightless bird is native to New Zealand?",
@@ -66,6 +72,7 @@ const allQuestions = {
         { text: "Emu", correct: false },
         { text: "Ostrich", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question: "Which mammal lays eggs?",
@@ -75,6 +82,7 @@ const allQuestions = {
         { text: "Koala", correct: false },
         { text: "Bat", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question: "Which snake is the longest in the world?",
@@ -84,6 +92,7 @@ const allQuestions = {
         { text: "Boa Constrictor", correct: false },
         { text: "King Cobra", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question: "How do dolphins communicate?",
@@ -93,6 +102,7 @@ const allQuestions = {
         { text: "Touch", correct: false },
         { text: "Grunts", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question: "What type of animal is a Komodo dragon?",
@@ -102,6 +112,7 @@ const allQuestions = {
         { text: "Crocodile", correct: false },
         { text: "Frog", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question: "Which marine creature has three hearts?",
@@ -111,6 +122,7 @@ const allQuestions = {
         { text: "Whale", correct: false },
         { text: "Shark", correct: false },
       ],
+      difficulty: "medium",
     },
 
     // University-level Difficult (8)
@@ -123,6 +135,7 @@ const allQuestions = {
         { text: "Poikilotherms", correct: false },
         { text: "Heliotherms", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question:
@@ -133,6 +146,7 @@ const allQuestions = {
         { text: "Pituitary gland", correct: false },
         { text: "Thyroid gland", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question: "Which part of the insect body contains the legs and wings?",
@@ -142,6 +156,7 @@ const allQuestions = {
         { text: "Abdomen", correct: false },
         { text: "Cephalothorax", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question: "Which class of animals do lampreys and hagfish belong to?",
@@ -151,6 +166,7 @@ const allQuestions = {
         { text: "Osteichthyes", correct: false },
         { text: "Amphibia", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question:
@@ -161,6 +177,7 @@ const allQuestions = {
         { text: "Jellyfish", correct: false },
         { text: "Coral", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question:
@@ -171,6 +188,7 @@ const allQuestions = {
         { text: "Autapomorphy", correct: false },
         { text: "Analogy", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question:
@@ -181,6 +199,7 @@ const allQuestions = {
         { text: "Actin", correct: false },
         { text: "Keratin", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question:
@@ -191,6 +210,7 @@ const allQuestions = {
         { text: "Asymmetry", correct: false },
         { text: "Spiral symmetry", correct: false },
       ],
+      difficulty: "hard",
     },
   ],
 
@@ -205,6 +225,7 @@ const allQuestions = {
         { text: "Leaves", correct: true },
         { text: "Flowers", correct: false },
       ],
+      difficulty: "easy",
     },
     {
       question: "What is the primary function of plant roots?",
@@ -214,6 +235,7 @@ const allQuestions = {
         { text: "Reproduction", correct: false },
         { text: "Support", correct: false },
       ],
+      difficulty: "easy",
     },
     {
       question:
@@ -224,6 +246,7 @@ const allQuestions = {
         { text: "Nitrogen", correct: false },
         { text: "Hydrogen", correct: false },
       ],
+      difficulty: "easy",
     },
     {
       question: "Which pigment is responsible for the green color in plants?",
@@ -233,6 +256,7 @@ const allQuestions = {
         { text: "Anthocyanin", correct: false },
         { text: "Melanin", correct: false },
       ],
+      difficulty: "easy",
     },
     {
       question: "Which part of the plant produces seeds?",
@@ -242,6 +266,7 @@ const allQuestions = {
         { text: "Flower", correct: true },
         { text: "Leaf", correct: false },
       ],
+      difficulty: "easy",
     },
 
     // Medium (7)
@@ -254,6 +279,7 @@ const allQuestions = {
         { text: "Germination", correct: false },
         { text: "Condensation", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question: "What type of plants do not have vascular tissue?",
@@ -263,6 +289,7 @@ const allQuestions = {
         { text: "Bryophytes", correct: true },
         { text: "Ferns", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question: "What structure in plants absorbs light for photosynthesis?",
@@ -272,6 +299,7 @@ const allQuestions = {
         { text: "Nucleus", correct: false },
         { text: "Vacuole", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question:
@@ -282,6 +310,7 @@ const allQuestions = {
         { text: "Cross-pollination", correct: true },
         { text: "Fertilization", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question: "Which part of the plant stores food in the form of starch?",
@@ -291,6 +320,7 @@ const allQuestions = {
         { text: "Stems", correct: false },
         { text: "Flowers", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question: "What is the male reproductive part of a flower called?",
@@ -300,6 +330,7 @@ const allQuestions = {
         { text: "Stamen", correct: true },
         { text: "Ovule", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question:
@@ -310,6 +341,7 @@ const allQuestions = {
         { text: "Fermentation", correct: false },
         { text: "Transpiration", correct: false },
       ],
+      difficulty: "medium",
     },
 
     // University-level Difficult (8)
@@ -322,6 +354,7 @@ const allQuestions = {
         { text: "Cytokinin", correct: false },
         { text: "Abscisic acid", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question:
@@ -332,6 +365,7 @@ const allQuestions = {
         { text: "Gymnosperms", correct: true },
         { text: "Ferns", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question:
@@ -345,6 +379,7 @@ const allQuestions = {
         { text: "Both have one seed leaf", correct: false },
         { text: "Both have two seed leaves", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question:
@@ -355,6 +390,7 @@ const allQuestions = {
         { text: "Capillary action", correct: true },
         { text: "Evaporation", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question:
@@ -365,6 +401,7 @@ const allQuestions = {
         { text: "Cambium", correct: false },
         { text: "Sclerenchyma", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question:
@@ -375,6 +412,7 @@ const allQuestions = {
         { text: "Annual", correct: true },
         { text: "Deciduous", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question:
@@ -385,6 +423,7 @@ const allQuestions = {
         { text: "CAM photosynthesis", correct: false },
         { text: "Asexual photosynthesis", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question:
@@ -395,6 +434,7 @@ const allQuestions = {
         { text: "Cortex", correct: false },
         { text: "Epidermis", correct: false },
       ],
+      difficulty: "hard",
     },
   ],
 
@@ -409,6 +449,7 @@ const allQuestions = {
         { text: "Skin", correct: true },
         { text: "Liver", correct: false },
       ],
+      difficulty: "easy",
     },
     {
       question: "How many bones are there in the adult human body?",
@@ -418,6 +459,7 @@ const allQuestions = {
         { text: "220", correct: false },
         { text: "200", correct: false },
       ],
+      difficulty: "easy",
     },
     {
       question: "Which organ pumps blood throughout the body?",
@@ -427,6 +469,7 @@ const allQuestions = {
         { text: "Heart", correct: true },
         { text: "Kidneys", correct: false },
       ],
+      difficulty: "easy",
     },
     {
       question: "What part of the brain controls thinking and decision-making?",
@@ -436,6 +479,7 @@ const allQuestions = {
         { text: "Cerebrum", correct: true },
         { text: "Thalamus", correct: false },
       ],
+      difficulty: "easy",
     },
     {
       question: "What is the main function of the red blood cells?",
@@ -445,6 +489,7 @@ const allQuestions = {
         { text: "Clot the blood", correct: false },
         { text: "Produce hormones", correct: false },
       ],
+      difficulty: "easy",
     },
 
     // Medium (7)
@@ -457,6 +502,7 @@ const allQuestions = {
         { text: "Immune system", correct: true },
         { text: "Respiratory system", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question: "What is the primary function of the digestive system?",
@@ -466,6 +512,7 @@ const allQuestions = {
         { text: "To pump blood", correct: false },
         { text: "To filter waste", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question: "Which part of the eye controls the amount of light entering?",
@@ -475,6 +522,7 @@ const allQuestions = {
         { text: "Pupil", correct: true },
         { text: "Retina", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question: "Which type of muscle is involuntary and found in the heart?",
@@ -484,6 +532,7 @@ const allQuestions = {
         { text: "Smooth muscle", correct: false },
         { text: "Striated muscle", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question:
@@ -494,6 +543,7 @@ const allQuestions = {
         { text: "Pons", correct: false },
         { text: "Hypothalamus", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question: "How many chambers does the human heart have?",
@@ -503,6 +553,7 @@ const allQuestions = {
         { text: "4", correct: true },
         { text: "5", correct: false },
       ],
+      difficulty: "medium",
     },
     {
       question: "Which hormone regulates the body's metabolism?",
@@ -512,6 +563,7 @@ const allQuestions = {
         { text: "Adrenaline", correct: false },
         { text: "Cortisol", correct: false },
       ],
+      difficulty: "medium",
     },
 
     // University-level Difficult (8)
@@ -524,6 +576,7 @@ const allQuestions = {
         { text: "Translation", correct: false },
         { text: "Mutation", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question: "What is the function of the smooth endoplasmic reticulum?",
@@ -533,6 +586,7 @@ const allQuestions = {
         { text: "DNA replication", correct: false },
         { text: "Cell division", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question: "Which cells are responsible for the production of antibodies?",
@@ -542,6 +596,7 @@ const allQuestions = {
         { text: "T lymphocytes", correct: false },
         { text: "Macrophages", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question: "What part of the nervous system controls voluntary movements?",
@@ -551,6 +606,7 @@ const allQuestions = {
         { text: "Somatic nervous system", correct: true },
         { text: "Autonomic nervous system", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question:
@@ -561,6 +617,7 @@ const allQuestions = {
         { text: "Active transport", correct: true },
         { text: "Endocytosis", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question: "What is the role of the Golgi apparatus in the cell?",
@@ -570,6 +627,7 @@ const allQuestions = {
         { text: "Stores genetic information", correct: false },
         { text: "Provides structural support", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question:
@@ -580,6 +638,7 @@ const allQuestions = {
         { text: "Fermentation", correct: false },
         { text: "Respiration", correct: false },
       ],
+      difficulty: "hard",
     },
     {
       question:
@@ -590,6 +649,7 @@ const allQuestions = {
         { text: "Protein", correct: false },
         { text: "Carbohydrates", correct: false },
       ],
+      difficulty: "hard",
     },
   ],
 
@@ -3823,6 +3883,841 @@ const allQuestions = {
         { text: "The Crown", correct: false },
         { text: "Narcos", correct: false },
         { text: "Stranger Things", correct: false },
+      ],
+      difficulty: "hard",
+    },
+  ],
+
+  aws: [
+    {
+      question: "What does AWS stand for?",
+      answers: [
+        { text: "Advanced Web Services", correct: false },
+        { text: "Amazon Web Services", correct: true },
+        { text: "Amazon Wide Services", correct: false },
+        { text: "Automated Web Services", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "Which AWS service is used for hosting a website?",
+      answers: [
+        { text: "Amazon EC2", correct: false },
+        { text: "Amazon S3", correct: true },
+        { text: "Amazon RDS", correct: false },
+        { text: "Amazon VPC", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "What is the main benefit of cloud computing?",
+      answers: [
+        { text: "Higher electricity bills", correct: false },
+        { text: "Scalability and cost savings", correct: true },
+        { text: "Limited storage", correct: false },
+        { text: "Fixed resources", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "Which AWS service provides virtual machines?",
+      answers: [
+        { text: "Amazon Lambda", correct: false },
+        { text: "Amazon EC2", correct: true },
+        { text: "Amazon S3", correct: false },
+        { text: "Amazon Route 53", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question:
+        "Which pricing model allows you to pay for compute capacity by the hour or second?",
+      answers: [
+        { text: "Reserved Instances", correct: false },
+        { text: "Spot Instances", correct: false },
+        { text: "On-Demand Instances", correct: true },
+        { text: "Dedicated Hosts", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "Which AWS service is a scalable object storage?",
+      answers: [
+        { text: "Amazon EC2", correct: false },
+        { text: "Amazon S3", correct: true },
+        { text: "Amazon EBS", correct: false },
+        { text: "Amazon VPC", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "What is the AWS global infrastructure composed of?",
+      answers: [
+        { text: "Regions and Availability Zones", correct: true },
+        { text: "Virtual Machines and Load Balancers", correct: false },
+        { text: "Networks and Routers", correct: false },
+        { text: "Data centers only", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "Which service helps you manage user access to AWS resources?",
+      answers: [
+        { text: "AWS IAM", correct: true },
+        { text: "AWS KMS", correct: false },
+        { text: "Amazon RDS", correct: false },
+        { text: "Amazon S3", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question:
+        "Which service is used to store and retrieve files at any time from anywhere?",
+      answers: [
+        { text: "Amazon EC2", correct: false },
+        { text: "Amazon S3", correct: true },
+        { text: "AWS IAM", correct: false },
+        { text: "Amazon RDS", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "Which AWS service is a fully managed NoSQL database?",
+      answers: [
+        { text: "Amazon Aurora", correct: false },
+        { text: "Amazon DynamoDB", correct: true },
+        { text: "Amazon Redshift", correct: false },
+        { text: "Amazon RDS", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "Which tool allows you to estimate your monthly AWS bill?",
+      answers: [
+        { text: "AWS Pricing Calculator", correct: true },
+        { text: "AWS Inspector", correct: false },
+        { text: "AWS Budget Alerts", correct: false },
+        { text: "AWS CloudTrail", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "What type of cloud model does AWS offer?",
+      answers: [
+        { text: "Private cloud only", correct: false },
+        { text: "Hybrid cloud only", correct: false },
+        { text: "Public cloud", correct: true },
+        { text: "Legacy cloud", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question:
+        "Which AWS service automatically distributes traffic across multiple targets?",
+      answers: [
+        { text: "AWS Auto Scaling", correct: false },
+        { text: "AWS Load Balancer", correct: true },
+        { text: "Amazon CloudWatch", correct: false },
+        { text: "Amazon VPC", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question:
+        "Which AWS service allows you to run code without provisioning servers?",
+      answers: [
+        { text: "Amazon EC2", correct: false },
+        { text: "Amazon S3", correct: false },
+        { text: "AWS Lambda", correct: true },
+        { text: "Amazon Route 53", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question:
+        "Which support plan gives 24x7 access to Cloud Support Engineers?",
+      answers: [
+        { text: "Basic", correct: false },
+        { text: "Developer", correct: false },
+        { text: "Business", correct: true },
+        { text: "Free Tier", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question:
+        "Which feature lets you isolate AWS resources in a virtual network?",
+      answers: [
+        { text: "Amazon Route 53", correct: false },
+        { text: "Amazon VPC", correct: true },
+        { text: "Amazon S3", correct: false },
+        { text: "AWS IAM", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "Which AWS service is used for DNS and domain name management?",
+      answers: [
+        { text: "Amazon EC2", correct: false },
+        { text: "Amazon Route 53", correct: true },
+        { text: "Amazon VPC", correct: false },
+        { text: "AWS IAM", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "What is the AWS Free Tier?",
+      answers: [
+        { text: "A temporary service", correct: false },
+        { text: "Free forever usage of all services", correct: false },
+        {
+          text: "Free usage limits for new customers for 12 months",
+          correct: true,
+        },
+        { text: "A pricing model for government use", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "Which AWS service provides metrics and logs?",
+      answers: [
+        { text: "AWS CloudTrail", correct: false },
+        { text: "Amazon CloudWatch", correct: true },
+        { text: "AWS IAM", correct: false },
+        { text: "Amazon VPC", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question:
+        "Which service helps prevent Distributed Denial of Service attacks?",
+      answers: [
+        { text: "AWS Shield", correct: true },
+        { text: "Amazon S3", correct: false },
+        { text: "AWS KMS", correct: false },
+        { text: "Amazon RDS", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "What is a benefit of using managed services like RDS?",
+      answers: [
+        { text: "You manage all configurations", correct: false },
+        { text: "AWS handles backups and maintenance", correct: true },
+        { text: "You install the database engine manually", correct: false },
+        { text: "You can’t scale the database", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "What does elasticity mean in AWS?",
+      answers: [
+        { text: "Being able to predict costs", correct: false },
+        { text: "Automatically scaling resources up and down", correct: true },
+        { text: "Fixed resource limits", correct: false },
+        { text: "Manual intervention for scaling", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "What is the purpose of AWS Organizations?",
+      answers: [
+        { text: "To manage IAM users", correct: false },
+        {
+          text: "To consolidate billing and manage policies across accounts",
+          correct: true,
+        },
+        { text: "To monitor applications", correct: false },
+        { text: "To store files", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "Which AWS tool helps track API activity in your account?",
+      answers: [
+        { text: "AWS CloudTrail", correct: true },
+        { text: "Amazon CloudWatch", correct: false },
+        { text: "AWS Trusted Advisor", correct: false },
+        { text: "AWS IAM", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "What does Amazon RDS stand for?",
+      answers: [
+        { text: "Relational Data Service", correct: false },
+        { text: "Relational Database Service", correct: true },
+        { text: "Remote Database Storage", correct: false },
+        { text: "Rapid Data Sync", correct: false },
+      ],
+      difficulty: "easy",
+    },
+    {
+      question: "Which AWS service is used to manage infrastructure as code?",
+      answers: [
+        { text: "AWS CloudFormation", correct: true },
+        { text: "Amazon S3", correct: false },
+        { text: "AWS Shield", correct: false },
+        { text: "Amazon EC2", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question: "What is the benefit of using Amazon EC2 Spot Instances?",
+      answers: [
+        { text: "They offer reserved capacity", correct: false },
+        { text: "They are free to use", correct: false },
+        { text: "They are cheaper than On-Demand instances", correct: true },
+        { text: "They come with automatic scaling", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question: "Which AWS service provides a virtual private network?",
+      answers: [
+        { text: "Amazon VPC", correct: true },
+        { text: "Amazon RDS", correct: false },
+        { text: "Amazon SQS", correct: false },
+        { text: "AWS CloudTrail", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question:
+        "Which of the following AWS support plans includes a Technical Account Manager (TAM)?",
+      answers: [
+        { text: "Basic", correct: false },
+        { text: "Developer", correct: false },
+        { text: "Business", correct: false },
+        { text: "Enterprise", correct: true },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question: "What tool allows users to estimate the cost of AWS services?",
+      answers: [
+        { text: "AWS Pricing Calculator", correct: true },
+        { text: "AWS Billing Console", correct: false },
+        { text: "AWS Cost Explorer", correct: false },
+        { text: "AWS Trusted Advisor", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question:
+        "What AWS service helps to centrally manage billing for multiple accounts?",
+      answers: [
+        { text: "AWS Organizations", correct: true },
+        { text: "AWS Budgets", correct: false },
+        { text: "AWS Trusted Advisor", correct: false },
+        { text: "AWS IAM", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question: "Which AWS service allows serverless code execution?",
+      answers: [
+        { text: "Amazon EC2", correct: false },
+        { text: "AWS Lambda", correct: true },
+        { text: "Amazon S3", correct: false },
+        { text: "AWS Auto Scaling", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question:
+        "Which AWS feature allows you to recover deleted objects from S3?",
+      answers: [
+        { text: "S3 Versioning", correct: true },
+        { text: "S3 Glacier", correct: false },
+        { text: "S3 Lifecycle", correct: false },
+        { text: "S3 Object Lock", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question:
+        "What AWS service can distribute incoming traffic across multiple targets?",
+      answers: [
+        { text: "AWS Elastic Load Balancing (ELB)", correct: true },
+        { text: "Amazon S3", correct: false },
+        { text: "Amazon Route 53", correct: false },
+        { text: "AWS WAF", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question: "Which AWS service helps detect unusual account activity?",
+      answers: [
+        { text: "Amazon GuardDuty", correct: true },
+        { text: "Amazon Macie", correct: false },
+        { text: "AWS Inspector", correct: false },
+        { text: "AWS CloudTrail", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question:
+        "Which of the following best describes the AWS Shared Responsibility Model?",
+      answers: [
+        { text: "AWS is responsible for all security", correct: false },
+        {
+          text: "The customer is responsible for securing the cloud",
+          correct: false,
+        },
+        {
+          text: "AWS manages security of the cloud, the customer manages security in the cloud",
+          correct: true,
+        },
+        {
+          text: "The customer is responsible for both security of and in the cloud",
+          correct: false,
+        },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question:
+        "Which AWS service provides block-level storage volumes for EC2?",
+      answers: [
+        { text: "Amazon S3", correct: false },
+        { text: "Amazon EBS", correct: true },
+        { text: "Amazon Glacier", correct: false },
+        { text: "Amazon RDS", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question:
+        "Which tool provides real-time insight into AWS resource usage and performance?",
+      answers: [
+        { text: "Amazon CloudWatch", correct: true },
+        { text: "AWS Config", correct: false },
+        { text: "AWS CloudTrail", correct: false },
+        { text: "AWS Auto Scaling", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question:
+        "Which AWS service enables you to run containerized applications?",
+      answers: [
+        { text: "Amazon ECS", correct: true },
+        { text: "Amazon EC2", correct: false },
+        { text: "AWS Lambda", correct: false },
+        { text: "Amazon EBS", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question: "How does AWS deliver high availability?",
+      answers: [
+        { text: "Using Availability Zones and Regions", correct: true },
+        { text: "Using IAM policies", correct: false },
+        { text: "Using EC2 Auto Recovery", correct: false },
+        { text: "Using S3 Replication", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question: "Which of the following is a benefit of using Amazon S3?",
+      answers: [
+        { text: "Unlimited storage capacity", correct: true },
+        { text: "Block storage", correct: false },
+        { text: "Supports relational data", correct: false },
+        { text: "Provides compute power", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question: "What service helps manage encryption keys for your data?",
+      answers: [
+        { text: "AWS KMS", correct: true },
+        { text: "AWS IAM", correct: false },
+        { text: "AWS Shield", correct: false },
+        { text: "AWS Secrets Manager", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question: "What AWS service enables querying S3 data using SQL?",
+      answers: [
+        { text: "Amazon Athena", correct: true },
+        { text: "Amazon Aurora", correct: false },
+        { text: "Amazon Redshift", correct: false },
+        { text: "Amazon DynamoDB", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question:
+        "What AWS tool provides recommendations for cost optimization and performance?",
+      answers: [
+        { text: "AWS Trusted Advisor", correct: true },
+        { text: "AWS Budgets", correct: false },
+        { text: "AWS CloudTrail", correct: false },
+        { text: "AWS CloudWatch", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question: "Which service allows you to run relational databases in AWS?",
+      answers: [
+        { text: "Amazon RDS", correct: true },
+        { text: "Amazon DynamoDB", correct: false },
+        { text: "Amazon Aurora Serverless", correct: false },
+        { text: "Amazon EC2", correct: false },
+      ],
+      difficulty: "medium",
+    },
+    {
+      question:
+        "What is the difference between AWS Shield Standard and AWS Shield Advanced?",
+      answers: [
+        {
+          text: "Shield Standard includes DDoS cost protection; Shield Advanced does not",
+          correct: false,
+        },
+        {
+          text: "Shield Advanced offers additional DDoS mitigation and 24/7 DRT access",
+          correct: true,
+        },
+        {
+          text: "Shield Advanced is included with all AWS accounts",
+          correct: false,
+        },
+        { text: "Shield Standard is a paid service", correct: false },
+      ],
+      difficulty: "hard",
+      exam: "Cloud Practitioner",
+    },
+    {
+      question:
+        "Which AWS service enables governance, compliance, operational auditing, and risk auditing of your AWS account?",
+      answers: [
+        { text: "AWS Trusted Advisor", correct: false },
+        { text: "AWS CloudTrail", correct: true },
+        { text: "AWS Config", correct: false },
+        { text: "AWS Inspector", correct: false },
+      ],
+      difficulty: "hard",
+      exam: "Cloud Practitioner",
+    },
+    {
+      question: "How does Amazon Macie protect sensitive data in AWS?",
+      answers: [
+        { text: "By scanning for malware in S3 buckets", correct: false },
+        { text: "By analyzing CloudWatch logs for threats", correct: false },
+        {
+          text: "By using ML to discover and classify sensitive data",
+          correct: true,
+        },
+        { text: "By providing encryption for all S3 buckets", correct: false },
+      ],
+      difficulty: "hard",
+      exam: "Cloud Practitioner",
+    },
+    {
+      question:
+        "What type of data consistency model does Amazon S3 use for overwrite PUTS and DELETES?",
+      answers: [
+        { text: "Eventually consistent", correct: false },
+        { text: "Strongly consistent", correct: true },
+        { text: "Weakly consistent", correct: false },
+        { text: "Inconsistent", correct: false },
+      ],
+      difficulty: "hard",
+      exam: "Cloud Practitioner",
+    },
+    {
+      question:
+        "Which AWS service would you use to connect on-premises applications to cloud services using a secure and scalable method?",
+      answers: [
+        { text: "AWS VPN", correct: false },
+        { text: "AWS Direct Connect", correct: true },
+        { text: "Amazon VPC", correct: false },
+        { text: "Amazon CloudFront", correct: false },
+      ],
+      difficulty: "hard",
+      exam: "Cloud Practitioner",
+    },
+    {
+      question:
+        "What AWS tool allows you to manage resources using a web-based scripting environment?",
+      answers: [
+        { text: "AWS CloudShell", correct: true },
+        { text: "AWS Lambda", correct: false },
+        { text: "AWS Config", correct: false },
+        { text: "AWS OpsWorks", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "What AWS service enables automatic recovery of EC2 instances when a system impairment is detected?",
+      answers: [
+        { text: "AWS CloudWatch", correct: true },
+        { text: "AWS Auto Scaling", correct: false },
+        { text: "Amazon Inspector", correct: false },
+        { text: "AWS Trusted Advisor", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "What does the AWS Nitro System primarily provide for EC2 instances?",
+      answers: [
+        { text: "High performance and enhanced security", correct: true },
+        { text: "Managed database connections", correct: false },
+        { text: "Automated patching", correct: false },
+        { text: "Serverless environment", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which AWS service provides compliance documentation for auditors?",
+      answers: [
+        { text: "AWS Artifact", correct: true },
+        { text: "AWS Shield", correct: false },
+        { text: "AWS CloudTrail", correct: false },
+        { text: "AWS Config", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which feature of Amazon VPC allows you to monitor network traffic entering and leaving your network interfaces?",
+      answers: [
+        { text: "VPC Flow Logs", correct: true },
+        { text: "AWS CloudWatch Logs", correct: false },
+        { text: "AWS Firewall Manager", correct: false },
+        { text: "AWS Security Hub", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which AWS service enables customers to build data lakes quickly and securely?",
+      answers: [
+        { text: "AWS Lake Formation", correct: true },
+        { text: "Amazon Redshift", correct: false },
+        { text: "Amazon RDS", correct: false },
+        { text: "AWS Glue", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which of the following AWS services allows you to define and enforce infrastructure-as-code?",
+      answers: [
+        { text: "AWS CloudFormation", correct: true },
+        { text: "AWS Systems Manager", correct: false },
+        { text: "AWS OpsWorks", correct: false },
+        { text: "Amazon CloudWatch", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "What AWS service enables configuration of schema for Amazon DynamoDB tables?",
+      answers: [
+        { text: "AWS AppSync", correct: false },
+        { text: "Amazon DynamoDB itself", correct: true },
+        { text: "AWS Schema Conversion Tool", correct: false },
+        { text: "AWS Glue Data Catalog", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which AWS service provides a managed environment to run Apache Spark and Apache Hadoop workloads?",
+      answers: [
+        { text: "Amazon EMR", correct: true },
+        { text: "AWS Glue", correct: false },
+        { text: "Amazon Athena", correct: false },
+        { text: "Amazon Redshift", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which of the following services uses lifecycle policies to automate transitions between storage classes?",
+      answers: [
+        { text: "Amazon S3", correct: true },
+        { text: "Amazon EBS", correct: false },
+        { text: "Amazon Glacier", correct: false },
+        { text: "Amazon FSx", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question: "What is the purpose of AWS Snowmobile?",
+      answers: [
+        { text: "Transporting exabytes of data to AWS", correct: true },
+        { text: "Backing up cloud data locally", correct: false },
+        { text: "Securing remote connections", correct: false },
+        { text: "Monitoring hybrid workloads", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "How does AWS CloudHSM help organizations meet compliance requirements?",
+      answers: [
+        {
+          text: "By providing a dedicated hardware security module (HSM)",
+          correct: true,
+        },
+        { text: "By auditing data access logs", correct: false },
+        { text: "By scanning for malware", correct: false },
+        { text: "By encrypting data using shared keys", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which AWS service enables organizations to centrally govern and manage multi-account environments?",
+      answers: [
+        { text: "AWS Organizations", correct: true },
+        { text: "AWS Control Tower", correct: false },
+        { text: "AWS IAM", correct: false },
+        { text: "AWS Config", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question: "What is a key benefit of using Amazon EC2 Spot Instances?",
+      answers: [
+        {
+          text: "Lower cost for stateless and flexible applications",
+          correct: true,
+        },
+        { text: "Guaranteed performance", correct: false },
+        { text: "Extended reserved pricing", correct: false },
+        { text: "Enhanced networking by default", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "What component of AWS Global Infrastructure helps reduce latency for users across the globe?",
+      answers: [
+        { text: "Edge Locations", correct: true },
+        { text: "Availability Zones", correct: false },
+        { text: "Regions", correct: false },
+        { text: "Auto Scaling Groups", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question: "How does AWS WAF protect web applications?",
+      answers: [
+        { text: "By filtering traffic based on rules", correct: true },
+        { text: "By backing up user data", correct: false },
+        { text: "By routing traffic to secure zones", correct: false },
+        { text: "By scanning code for vulnerabilities", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which AWS feature enables automatic rollback of CloudFormation stacks when deployment fails?",
+      answers: [
+        { text: "Stack rollback", correct: true },
+        { text: "Stack snapshot", correct: false },
+        { text: "Auto backup", correct: false },
+        { text: "Termination protection", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "What AWS service allows for querying data in S3 using standard SQL?",
+      answers: [
+        { text: "Amazon Athena", correct: true },
+        { text: "Amazon EMR", correct: false },
+        { text: "Amazon RDS", correct: false },
+        { text: "AWS Glue", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which service enables the encryption of data in motion and at rest on AWS?",
+      answers: [
+        { text: "AWS KMS", correct: true },
+        { text: "AWS Shield", correct: false },
+        { text: "Amazon S3", correct: false },
+        { text: "AWS IAM", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question: "What is the role of a VPC security group?",
+      answers: [
+        {
+          text: "Control inbound and outbound traffic for EC2 instances",
+          correct: true,
+        },
+        { text: "Connect VPCs together", correct: false },
+        { text: "Assign subnets", correct: false },
+        { text: "Log DNS queries", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which AWS service helps detect unintended access to your S3 buckets?",
+      answers: [
+        { text: "Amazon Macie", correct: true },
+        { text: "Amazon Inspector", correct: false },
+        { text: "AWS Artifact", correct: false },
+        { text: "AWS Shield", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which service provides fully managed document database capabilities compatible with MongoDB?",
+      answers: [
+        { text: "Amazon DocumentDB", correct: true },
+        { text: "Amazon Neptune", correct: false },
+        { text: "Amazon RDS", correct: false },
+        { text: "AWS Glue", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which AWS service is designed to analyze application and infrastructure logs?",
+      answers: [
+        { text: "Amazon CloudWatch Logs", correct: true },
+        { text: "AWS CloudTrail", correct: false },
+        { text: "AWS X-Ray", correct: false },
+        { text: "AWS Config", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which AWS component helps isolate and partition cloud resources logically?",
+      answers: [
+        { text: "Virtual Private Cloud (VPC)", correct: true },
+        { text: "IAM roles", correct: false },
+        { text: "Regions", correct: false },
+        { text: "CloudFront", correct: false },
+      ],
+      difficulty: "hard",
+    },
+    {
+      question:
+        "Which AWS support plan includes a Technical Account Manager (TAM)?",
+      answers: [
+        { text: "Enterprise", correct: true },
+        { text: "Developer", correct: false },
+        { text: "Basic", correct: false },
+        { text: "Business", correct: false },
       ],
       difficulty: "hard",
     },

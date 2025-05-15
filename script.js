@@ -55,6 +55,48 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Display the current question and answers
+  // function showQuestion() {
+  //   const app = document.getElementById("app");
+  //   app.appendChild(quizContainer);
+
+  //   resetState();
+  //   const currentQuestion = shuffledQuestions[currentQuestionIndex];
+  //   const questionNumber = currentQuestionIndex + 1;
+
+  //   // 1. Replace the question text
+  //   questionElement.textContent = currentQuestion.question;
+  //   progressElement.textContent = `Question ${questionNumber} of ${shuffledQuestions.length}`;
+
+  //   // 2. Create and replace answer buttons
+  //   currentQuestion.answers.forEach((answer) => {
+  //     const button = document.createElement("button");
+  //     button.textContent = answer.text;
+  //     button.classList.add("btn");
+
+  //     // Mark the correct answer
+  //     if (answer.correct) {
+  //       button.dataset.correct = answer.correct;
+  //     }
+
+  //     button.addEventListener("click", selectAnswer);
+  //     answerButtonsContainer.appendChild(button);
+  //   });
+
+  //   function shuffleArray(arr) {
+  //     return arr.sort(() => Math.random() - 0.5);
+  //   }
+
+  //   categoryButtons.forEach((button) => {
+  //     button.addEventListener("click", () => {
+  //       const selectedCategory = button.dataset.category;
+  //       questions = allQuestions[selectedCategory];
+  //       categorySelection.style.display = "none";
+  //       quizContainer.style.display = "block";
+  //       startQuiz();
+  //     });
+  //   });
+  // }
+
   function showQuestion() {
     const app = document.getElementById("app");
     app.appendChild(quizContainer);
@@ -63,17 +105,39 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentQuestion = shuffledQuestions[currentQuestionIndex];
     const questionNumber = currentQuestionIndex + 1;
 
-    // 1. Replace the question text
+    // Replace the question text
     questionElement.textContent = currentQuestion.question;
     progressElement.textContent = `Question ${questionNumber} of ${shuffledQuestions.length}`;
 
-    // 2. Create and replace answer buttons
-    currentQuestion.answers.forEach((answer) => {
+    // Shuffle the answers before creating buttons
+    const shuffledAnswers = shuffleArray([...currentQuestion.answers]);
+
+    // Determine the background color based on difficulty
+    let bgColor;
+    switch (currentQuestion.difficulty) {
+      case "easy":
+        bgColor = "#FEFADC";
+        break;
+      case "medium":
+        bgColor = "#F6D4BA";
+        break;
+      case "hard":
+        bgColor = "#F3B391";
+        break;
+      default:
+        bgColor = "#ffffff"; // default fallback color
+    }
+
+    // Create and add answer buttons
+    shuffledAnswers.forEach((answer) => {
       const button = document.createElement("button");
       button.textContent = answer.text;
       button.classList.add("btn");
 
-      // Mark the correct answer
+      // Apply background color based on difficulty
+      document.body.style.backgroundColor = bgColor;
+      button.style.fontWeight = "bold";
+
       if (answer.correct) {
         button.dataset.correct = answer.correct;
       }
@@ -81,32 +145,11 @@ document.addEventListener("DOMContentLoaded", function () {
       button.addEventListener("click", selectAnswer);
       answerButtonsContainer.appendChild(button);
     });
-    // RANDOM BUTTON
-    function getRandomQuestions() {
-      // Flatten all category arrays into one big array
-      const all = Object.values(allQuestions).flat();
+  }
 
-      // Shuffle and take the first 20
-      return shuffleArray(all).slice(0, 20);
-    }
-
-    function shuffleArray(arr) {
-      return arr.sort(() => Math.random() - 0.5);
-    }
-
-    categoryButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const selectedCategory = button.dataset.category;
-        questions =
-          selectedCategory === "random"
-            ? getRandomQuestions()
-            : allQuestions[selectedCategory];
-
-        categorySelection.style.display = "none";
-        quizContainer.style.display = "block";
-        startQuiz();
-      });
-    });
+  // Helper function: Place outside of showQuestion()
+  function shuffleArray(arr) {
+    return arr.sort(() => Math.random() - 0.5);
   }
 
   // Reset the quiz state for the next question
